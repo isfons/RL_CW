@@ -6,7 +6,7 @@ This coursework focuses on **inventory optimization using Reinforcement Learning
 
 ## Task
 
-Implement your RL algorithm in [`your_algorithm.py`](algorithms\your_algorithm.py). You have complete freedom in the choice of the optimization algorithm but, please, respect the template to ensure compliance with the evaluation platform we will use for grading the assignement.
+Implement your RL algorithm in [`your_algorithm.py`](algorithms/your_algorithm.py). You have complete freedom in the choice of the optimization algorithm but, please, respect the template to ensure compliance with the evaluation platform we will use for grading the assignement.
 
 Use the notebook [`ML4CE_RL_INV_CW.ipynb`](ML4CE_RL_INV_CW.ipynb) to execute and assess the performance of your algorithm. Learning curves and reward distribution plots are provided to analyse the training process and compare your algorithm against different benchmark policies, respectively.
 
@@ -21,7 +21,7 @@ Use the notebook [`ML4CE_RL_INV_CW.ipynb`](ML4CE_RL_INV_CW.ipynb) to execute and
 - Rename `your_alg.py` to `CW3_your_team_name.py`
 - Ensure your algorithm respects the template
 - Use only the packages already provided in the python environment `ml4ce_rl.yml`. For more information about how to create an environment from an environment.yml file, visit [CONDA User Guide](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file).
-- Remember to modify the following lines at the end of [`your_algorithm.py`](algorithms\your_algorithm.py)
+- Remember to modify the following lines at the end of [`your_algorithm.py`](algorithms/your_algorithm.py)
 ```python
     team_names = ["",""] # Name of each participant
     cids = ["", ""]      # CID of each participant
