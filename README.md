@@ -12,26 +12,26 @@ Use the notebook [`ML4CE_RL_INV_CW.ipynb`](ML4CE_RL_INV_CW.ipynb) to execute and
 
 ### Key Constraints & Assumptions
 
-- **Evaluation Budget**: execution will be stopped if either the maximum number of iterations or the maximum time are reached.
+- **Evaluation Budget**: your algorithm can interact with the RL environment for a limited number of episodes (´max_episodes=200´).
 - **Recommendation**: save policy parameters regularly during execution and and return the best value found when stopping criteria are met.
 - **Policy network**: do not modify the architecture of the neural network.
 
 ### Submission Requirements
 
-- Rename `your_alg.py` to `CW3_your_team_name.py`
+- Rename `your_alg.py` to `RL_your_team_name.py`
 - Ensure your algorithm respects the template
 - Use only the packages already provided in the python environment `ml4ce_rl.yml`. For more information about how to create an environment from an environment.yml file, visit [CONDA User Guide](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file).
 - Remember to modify the following lines at the end of [`your_algorithm.py`](algorithms/your_algorithm.py)
 ```python
-    team_names = ["",""] # Name of each participant
-    cids = ["", ""]      # CID of each participant
-    question = [,]       # Do you want to be asked about RL in the final exam? 1: YES, 0: NO
+    team_names = ["Del Rio Chanona, Antonio","Fons, Isabela"] # Names of the team members (Imperial format)
+    cids = ["16879875", "06089513"] # CID (University Identifier)
+    question = [1,0] # Would you like to be asked about this coursework in the final exam? 1: YES, 0: NO
 ```
 
 ## Project Structure
 
 ```
-cw3_rl/
+ReinforcementLearning/
 ├── ML4CE_RL_INV_CW.ipynb               # Main notebook
 ├── README.md                           # This file
 ├── algorithms/                         # Algorithm implementations
