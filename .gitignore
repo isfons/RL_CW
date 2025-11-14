@@ -1,0 +1,11 @@
+# Ignore pycache folders
+__pycache__
+*/__pycache__
+
+# Folders not to be tracked
+.devcontainer/
+REINFORCE_policies/
+SA_policies/
+
+# Files not to be added to the remote repo
+
