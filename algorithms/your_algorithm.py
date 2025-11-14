@@ -3,6 +3,7 @@ import time
 import numpy as np
 import torch
 import tqdm
+
 from common import PolicyNetwork
 from utils import setup_model_saving
 
@@ -43,8 +44,14 @@ def your_optimization_alg(
     print(f"Policy model weights saved in: {save_f_path}")
     print(f"Best reward: {best_reward}")
 
-    team_names = ["Student1", "Student2"]
-    cids = ["1234", "5678"]
-    question = [0, 0]  # 1 if RL 0 else
+    # Names of the team members (Imperial format)
+    team_names = [
+        "Del Rio Chanona, Antonio",
+        "Fons, Isabela",
+    ]
+    # CID (University Identifier)
+    cids = ["16879875", "06069513"]
+    # Would you like to be asked about this coursework in the final exam? 1 if YES, 0 else
+    question = [1, 0]
 
     return best_policy, plot_data
