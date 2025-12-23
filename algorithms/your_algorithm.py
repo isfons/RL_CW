@@ -1,26 +1,28 @@
+import copy
 import time
 
 import numpy as np
 import torch
 import tqdm
+from tqdm import tqdm
 
 from common import PolicyNetwork
+from ML4CE_RL_environment import MESCEnv
 from utils import setup_model_saving
 
 
 def your_optimization_alg(
-    env,
-    policy_net,
+    env: MESCEnv,
+    policy_net: PolicyNetwork,
     *,
-    max_episodes=200,
-    max_time=60.0,
+    max_episodes=2000,
+    max_time=5 * 60,  # seconds
 ):
-
     # Create file to store model weigths
     save_f_path = setup_model_saving(algorithm="Your algorithm")
 
     # Initialize buffers to store data for plotting
-    plot_data = {"reward_history": [], "timesteps": []}
+    plot_data = {"reward_history": [], "episodes": []}
 
     start_time = time.time()
     best_reward = -np.inf
@@ -43,15 +45,5 @@ def your_optimization_alg(
 
     print(f"Policy model weights saved in: {save_f_path}")
     print(f"Best reward: {best_reward}")
-
-    # Names of the team members (Imperial format)
-    team_names = [
-        "Del Rio Chanona, Antonio",
-        "Fons, Isabela",
-    ]
-    # CID (University Identifier)
-    cids = ["16879875", "06069513"]
-    # Would you like to be asked about this coursework in the final exam? 1 if YES, 0 else
-    question = [1, 0]
 
     return best_policy, plot_data
