@@ -8,4 +8,5 @@ REINFORCE_policies/
 SA_policies/
 
 # Files not to be added to the remote repo
-
+submission_app.py
+ml4ce_rl.yml
